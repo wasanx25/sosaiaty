@@ -8,6 +8,16 @@ fn main() {
              gargoyle.get_name(),
              gargoyle.get_level(),
              effect=gargoyle.get_effect());
+
+    let grinder_golem = Monster {
+        name: "grinder golem".to_string(),
+        level: 8,
+        effect: "Generate Grinder tokens on my field.".to_string()
+    };
+    println!("name: {}, level: {}, effect: {}",
+             grinder_golem.get_name(),
+             grinder_golem.get_level(),
+             grinder_golem.get_effect());
 }
 
 trait Card {
