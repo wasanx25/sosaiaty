@@ -1,0 +1,6 @@
+[package]
+name = "sosaiaty"
+version = "0.1.0"
+authors = ["wasanx25 <wataru.kikuchi0225@gmail.com>"]
+
+[dependencies]
