@@ -1,2 +1,2 @@
 ## sosaiaty
-Sample Of Struct And Interface And Trait Yeah
+Sample Of Struct And Interface And Trait Yeah By Rust.
