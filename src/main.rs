@@ -24,10 +24,10 @@ fn main() {
         spell: MagicSpell::FieldSpell,
         effect: "Search RitualSpell Magic Card.".to_string()
     };
-    println!("name: {}, effect: {}, card_type: {}",
+    println!("name: {}, card_type: {}, effect: {}",
              ritual_sanctuary.get_name(),
-             ritual_sanctuary.get_effect(),
-             ritual_sanctuary.get_spell());
+             ritual_sanctuary.get_spell(),
+             ritual_sanctuary.get_effect());
 }
 
 trait Card {
@@ -71,9 +71,9 @@ enum MagicSpell {
     ContinuousSpell,
 }
 
-impl MagicSpell {
-    pub fn get_spell_name(self) -> String {
-        match self {
+impl Magic {
+    pub fn get_spell(&self) -> String {
+        match self.spell {
             MagicSpell::QuickPlaySpell => "Quick-Play Spell".to_string(),
             MagicSpell::FieldSpell => "Field Spell".to_string(),
             MagicSpell::EquipSpell => "Eauip Spell".to_string(),
@@ -81,12 +81,6 @@ impl MagicSpell {
             MagicSpell::RitualSpell => "Ritual Spell".to_string(),
             MagicSpell::ContinuousSpell => "Continuous Spell".to_string(),
         }
-    }
-}
-
-impl Magic {
-    pub fn get_spell(self) -> String {
-        return self.spell.get_spell_name();
     }
 }
 
