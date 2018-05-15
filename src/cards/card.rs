@@ -30,6 +30,7 @@ pub struct Magic {
     pub effect: String,
 }
 
+#[allow(dead_code)]
 pub enum MagicSpell {
     QuickPlaySpell,
     FieldSpell,
